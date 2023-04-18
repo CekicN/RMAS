@@ -21,6 +21,7 @@ class MyPlacesList : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val navController = findNavController(R.id.nav_host_fragment_content_my_places_list)
         appBarConfiguration = AppBarConfiguration(navController.graph)

@@ -15,7 +15,13 @@
             android:name=".MyPlacesList"
             android:exported="false"
             android:label="@string/title_activity_my_places_list"
-            android:theme="@style/Theme.MyPlaces.NoActionBar" />
+            android:theme="@style/Theme.MyPlaces.NoActionBar"
+            android:parentActivityName="elfak.mosis.myplaces.MainActivity"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="elfak.mosis.myplaces.MainActivity">
+
+        </meta-data>
         <activity
             android:name=".MainActivity"
             android:exported="true"
